@@ -34,10 +34,17 @@ class ViewController: UIViewController, NavigationProtocol {
     var toggleCameraGestureRecognizer = UITapGestureRecognizer()
     
     var capturePhotoOutput: AVCapturePhotoOutput?
-
+    
+    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "View forms", style: .plain, target: self, action: #selector(goToTable))
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        
+
         
         photoPreviewLayer.isHidden = true
         
@@ -98,6 +105,10 @@ class ViewController: UIViewController, NavigationProtocol {
         view.addGestureRecognizer(toggleCameraGestureRecognizer)
     }
     
+    @objc func goToTable() {
+        performNavigation(currentView: self, destination: .tableView)
+    }
+    
     @IBAction func retakePhoto(_ sender: Any) {
         self.photoPreviewLayer.isHidden = true
         self.navigationController?.navigationBar.isHidden = false
@@ -137,6 +148,7 @@ class ViewController: UIViewController, NavigationProtocol {
     }
     
     @IBAction func capturePressed(_ sender: Any) {
+        self.navigationController?.navigationBar.isHidden = true
         // Make sure capturePhotoOutput is valid
         guard let capturePhotoOutput = self.capturePhotoOutput else { return }
         // Get an instance of AVCapturePhotoSettings class
@@ -148,7 +160,7 @@ class ViewController: UIViewController, NavigationProtocol {
         // Call capturePhoto method by passing our photo settings and a
         // delegate implementing AVCapturePhotoCaptureDelegate
         capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
-        self.navigationController?.navigationBar.isHidden = true
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -195,3 +207,8 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
     
 }
 
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        prepareForNavigation(currentView: self, destination: .formView, segue: segue, sender: self.previewImage.image)
+    }
+}

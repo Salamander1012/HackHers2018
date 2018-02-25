@@ -25,16 +25,18 @@ extension NavigationProtocol {
             currentView.performSegue(withIdentifier: "goToForm", sender: currentView)
         case .tableView:
             print("performing table view segue")
+            currentView.performSegue(withIdentifier: "goToTableView", sender: currentView)
         default:
             print("default case")
         }
     }
     
-    func prepareForNavigation(currentView: UIViewController, destination: Destinations, segue: UIStoryboardSegue) {
+    func prepareForNavigation(currentView: UIViewController, destination: Destinations, segue: UIStoryboardSegue, sender: Any?) {
         switch destination {
         case .formView:
             if let nextView = segue.destination as? FormViewController {
-                print("dasdas")
+                
+                nextView.formImage = sender as! UIImage
             }
         case .tableView:
             print("performing table view segue")
