@@ -12,6 +12,8 @@
 		C96CD7082041E25B00DC1774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96CD7062041E25B00DC1774 /* Main.storyboard */; };
 		C96CD70A2041E25B00DC1774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96CD7092041E25B00DC1774 /* Assets.xcassets */; };
 		C96CD70D2041E25B00DC1774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96CD70B2041E25B00DC1774 /* LaunchScreen.storyboard */; };
+		C96CD71520423A9E00DC1774 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD71420423A9E00DC1774 /* NavigationProtocol.swift */; };
+		C96CD7172042412000DC1774 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD7162042412000DC1774 /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C96CD7092041E25B00DC1774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96CD70C2041E25B00DC1774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96CD70E2041E25B00DC1774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96CD71420423A9E00DC1774 /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		C96CD7162042412000DC1774 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C96CD7092041E25B00DC1774 /* Assets.xcassets */,
 				C96CD70B2041E25B00DC1774 /* LaunchScreen.storyboard */,
 				C96CD70E2041E25B00DC1774 /* Info.plist */,
+				C96CD71420423A9E00DC1774 /* NavigationProtocol.swift */,
+				C96CD7162042412000DC1774 /* FormViewController.swift */,
 			);
 			path = ExonMobileSafetyForm;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96CD71520423A9E00DC1774 /* NavigationProtocol.swift in Sources */,
 				C96CD7052041E25B00DC1774 /* ViewController.swift in Sources */,
+				C96CD7172042412000DC1774 /* FormViewController.swift in Sources */,
 				C96CD7032041E25B00DC1774 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = ExonMobileSafetyForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salmanfakhri.ExonMobileSafetyForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = ExonMobileSafetyForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salmanfakhri.ExonMobileSafetyForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
