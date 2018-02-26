@@ -76,7 +76,7 @@ class ViewController: UIViewController, NavigationProtocol {
         }
         
         // default device
-        currentDevice = frontFacingCamera
+        currentDevice = backFacingCamera
         
         do {
             let input = try AVCaptureDeviceInput(device: currentDevice!)

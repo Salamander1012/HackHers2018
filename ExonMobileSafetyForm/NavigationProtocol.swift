@@ -40,6 +40,9 @@ extension NavigationProtocol {
             }
         case .tableView:
             print("performing table view segue")
+            if let nextView = segue.destination as? TableViewController {
+                
+            }
         default:
             print("default case")
         }

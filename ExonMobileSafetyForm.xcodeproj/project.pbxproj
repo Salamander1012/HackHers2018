@@ -16,6 +16,7 @@
 		C96CD7172042412000DC1774 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD7162042412000DC1774 /* FormViewController.swift */; };
 		C96CD7192042EA8000DC1774 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD7182042EA8000DC1774 /* Models.swift */; };
 		C96CD71B2042EDC800DC1774 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD71A2042EDC800DC1774 /* TableViewController.swift */; };
+		C96CD71D2042F77B00DC1774 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CD71C2042F77B00DC1774 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C96CD7162042412000DC1774 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		C96CD7182042EA8000DC1774 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C96CD71A2042EDC800DC1774 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C96CD71C2042F77B00DC1774 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				C96CD7162042412000DC1774 /* FormViewController.swift */,
 				C96CD7182042EA8000DC1774 /* Models.swift */,
 				C96CD71A2042EDC800DC1774 /* TableViewController.swift */,
+				C96CD71C2042F77B00DC1774 /* TableViewCell.swift */,
 			);
 			path = ExonMobileSafetyForm;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				C96CD7052041E25B00DC1774 /* ViewController.swift in Sources */,
 				C96CD7172042412000DC1774 /* FormViewController.swift in Sources */,
 				C96CD7032041E25B00DC1774 /* AppDelegate.swift in Sources */,
+				C96CD71D2042F77B00DC1774 /* TableViewCell.swift in Sources */,
 				C96CD7192042EA8000DC1774 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
